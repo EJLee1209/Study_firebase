@@ -8,6 +8,9 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.study.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.ktx.storage
 
 class LoginActivity : AppCompatActivity() {
     var mBinding: ActivityLoginBinding? = null
@@ -19,7 +22,9 @@ class LoginActivity : AppCompatActivity() {
         mBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // FirebaseAuth 객체 얻기
         auth = FirebaseAuth.getInstance()
+
 
         binding.register.setOnClickListener {
             //회원가입 버튼 클릭 시
@@ -30,10 +35,6 @@ class LoginActivity : AppCompatActivity() {
             var pw = binding.inputPw.text.toString()
             login(email,pw)
         }
-
-
-
-
 
     }
     fun login(email: String, password: String){

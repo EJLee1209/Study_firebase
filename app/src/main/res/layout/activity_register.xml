@@ -15,12 +15,33 @@
         android:id="@+id/register_pw1"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="패스워드"/>
     <EditText
         android:id="@+id/register_pw2"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
         android:hint="패스워드 확인"/>
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="이름"/>
+    <EditText
+        android:id="@+id/register_job"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="직업"/>
+    <EditText
+        android:id="@+id/register_age"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="나이"
+        android:layout_marginBottom="20dp"/>
 
 
     <Button

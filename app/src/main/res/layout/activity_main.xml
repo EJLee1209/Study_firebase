@@ -8,7 +8,11 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
-
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="새로고침"/>
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="match_parent"
